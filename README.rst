@@ -1,4 +1,5 @@
-# Rest Auth
+Rest Auth
+===========
 
 Create a REST API for a blog with CRUD functionality of posts, login, register, OAUTH.
 
