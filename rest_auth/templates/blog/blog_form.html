@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% load crispy_forms_tags %}
+
+{% block header %}
+{% endblock %}
+{% block content %}
+
+
+    <div class="row make-white">
+        <div class="col-md-12 new_path_form text-center">
+            <form action="{% url 'new_blog' %}" method="post">
+                {% csrf_token %}
+                {{ form|crispy }}
+
+                <input type="submit" value="Create new Blogs" class="btn btn-primary btn-lg button-full">
+
+            </form>
+        </div>
+    </div>
+
+{% endblock %}
